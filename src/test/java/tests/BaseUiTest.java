@@ -11,6 +11,7 @@ public abstract class BaseUiTest {
 
     protected WebDriver driver;
 
+
     @Before
     public void setUp() {
         String browser = System.getProperty("browser", "chrome");
@@ -22,6 +23,7 @@ public abstract class BaseUiTest {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
+        driver.manage().window().maximize();
     }
 
     @After

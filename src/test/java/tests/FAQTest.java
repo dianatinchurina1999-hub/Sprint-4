@@ -10,12 +10,12 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @RunWith(Parameterized.class)
-public class QTest extends BaseUiTest {
+public class FAQTest extends BaseUiTest {
 
     private final int index;
     private final String expectedPart;
 
-    public QTest(int index, String expectedPart) {
+    public FAQTest(int index, String expectedPart) {
         this.index = index;
         this.expectedPart = expectedPart;
     }
